@@ -1,5 +1,5 @@
 /* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Noto+Serif+Hebrew:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Sumana:wght@400;700&display=swap');
 /* VARIABLES */
 :root{
     --color-blanco: #FFFFFF;
@@ -35,12 +35,20 @@ a{
     text-decoration: none;
     color: var(--color-negro);
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 i{
     font-size: 1.1rem;
 }
 section{
     display: flex;
+}
+h1{
+    font-size: 6rem;
+    font-family: 'Sumana', serif;
+    font-weight: 400;
+    width: 80%;
+    line-height: 8rem;
 }
 
 /* HEADER */
@@ -69,13 +77,45 @@ section{
     padding: 0.4rem 0.5rem;
 }
 /* FIN HEADER */
+/* HERO */
 .fondo-blanco{
     background-color: var(--color-blanco);
     width: 60%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 2.2rem;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    top: 2rem;
+}
+.titulo a{
+    border: 2px solid var(--color-negro);
+    padding: 0.8rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: fit-content;
+}
+.parrafo{
+    position: relative;
+    top: 15rem;
+}
+.parrafo p{
+    width: 40%;
+    font-family: 'Sumana', serif;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: var(--color-marron-oscuro);
 }
 .fondo-marron{
     background-color: var(--color-marron-claro);
     width: 40%;
     height: 100vh;
 }
+/* FIN HERO */
