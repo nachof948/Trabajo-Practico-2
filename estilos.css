@@ -1,0 +1,81 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Noto+Serif+Hebrew:wght@600&display=swap');
+/* VARIABLES */
+:root{
+    --color-blanco: #FFFFFF;
+    --color-marron-claro: #D6BDA6;
+    --color-negro: #000000;
+    --color-crema: #F0E9DB;
+    --color-marron-oscuro: #706257;
+}
+/* SELECTOR UNIVERSAL */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ESTILOS GENERALES */
+header{
+    position: fixed;
+    top: 0;
+    width: 95%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.2rem;
+}
+nav{
+    display: flex;
+    gap: 6rem;
+    position: relative;
+    right: 14rem;
+}
+a{
+    text-decoration: none;
+    color: var(--color-negro);
+    font-weight: 600;
+}
+i{
+    font-size: 1.1rem;
+}
+section{
+    display: flex;
+}
+
+/* HEADER */
+.enlaces-usuario{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.iconos-usuario{
+    display: flex;
+    gap: 1.4rem;
+}
+.divisor{
+    height: 1.5rem;
+    width: 0.05rem;
+    background-color: var(--color-marron-oscuro);
+    opacity: 0.5;
+}
+.registro-usuario{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+.sign-up{
+    border: 1px solid var(--color-negro);
+    padding: 0.4rem 0.5rem;
+}
+/* FIN HEADER */
+.fondo-blanco{
+    background-color: var(--color-blanco);
+    width: 60%;
+    height: 100vh;
+}
+.fondo-marron{
+    background-color: var(--color-marron-claro);
+    width: 40%;
+    height: 100vh;
+}
