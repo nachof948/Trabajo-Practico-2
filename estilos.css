@@ -1,5 +1,5 @@
 /* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Sumana:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Zen+Old+Mincho:wght@700&display=swap');
 /* VARIABLES */
 :root{
     --color-blanco: #FFFFFF;
@@ -24,17 +24,15 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2.2rem;
+    padding: 1.5rem 0rem 0rem 4.5rem;
 }
 nav{
     display: flex;
     gap: 6rem;
     position: relative;
-    right: 14rem;
+    right: 15rem;
 }
-main{
-    overflow: hidden;
-}
+
 a{
     text-decoration: none;
     color: var(--color-negro);
@@ -48,21 +46,42 @@ section{
     display: flex;
 }
 h1{
-    font-size: 6rem;
-    font-family: 'Sumana', serif;
-    font-weight: 400;
+    font-size: 6.7rem;
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: 700;
     width: 80%;
-    line-height: 8rem;
+    line-height: 7rem;
+    letter-spacing: -5px;
+    
 }
 /* HEADER */
+nav a{
+    position: relative;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-negro);
+    top: 1rem;
+    transition: all 250ms;
+}
+nav a:hover::before{
+    width: 100%;
+}
 .enlaces-usuario{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.3rem;
+    padding-right: 3rem;
 }
 .iconos-usuario{
     display: flex;
     gap: 1.4rem;
+}
+.iconos-usuario i{
+    font-size: 1.4rem;
 }
 .cartera{
     position: relative;
@@ -77,8 +96,8 @@ h1{
     padding: 0.06rem 0.22rem;
     text-align: center;
     font-size: 0.45rem;
-    bottom: 0.6rem;
-    left: 0.6rem;
+    bottom: 0.8rem;
+    left: 0.8rem;
 }
 .divisor{
     height: 1.5rem;
@@ -89,24 +108,25 @@ h1{
 .registro-usuario{
     display: flex;
     align-items: center;
-    gap: 1.4rem;
+    gap: 1.8rem;
 }
 .sign-up{
     border: 1px solid var(--color-negro);
-    padding: 0.4rem 0.5rem;
+    padding: 0.35rem 0.9rem;
 }
 /* FIN HEADER */
 /* HERO */
 .fondo-blanco{
     background-color: var(--color-blanco);
-    width: 60%;
-    height: 100vh;
+    flex-basis: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0rem 2.2rem;
+    padding: 0rem 2.2rem 0rem 4.5rem;
     position: relative;
+    height: 100vh;
 }
+
 .titulo{
     display: flex;
     flex-direction: column;
@@ -117,10 +137,11 @@ h1{
 }
 .titulo a{
     border: 2px solid var(--color-negro);
-    padding: 0.8rem 2.2rem;
+    padding: 0.8rem 2rem;
     font-size: 1rem;
     font-weight: 600;
     width: fit-content;
+    position: relative;
 }
 .parrafo{
     position: relative;
@@ -128,22 +149,24 @@ h1{
 }
 .parrafo p{
     width: 40%;
-    font-family: 'Sumana', serif;
+    font-family: 'Zen Old Mincho', serif;
     font-weight: 700;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    letter-spacing: -1px;
     color: var(--color-marron-oscuro);
 }
 .fondo-marron{
     background-color: var(--color-marron-claro);
-    width: 40%;
-    height: 100vh;
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    height: 100vh;
 }
 .fondo-marron img{
-    width: 59rem;
+    width: 60rem;
     height: 53rem;
     position: absolute;
     top: 5.05rem;
@@ -158,6 +181,7 @@ ul{
 }
 li{
     margin: 2.5rem 3.7rem;
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     cursor: pointer;
 }
@@ -167,8 +191,8 @@ li::before{
     height: 600%;
     width: 0.2rem;
     background-color: #706257;
-    left: 0.7rem;
-    top: -1rem;
+    left: 0.8rem;
+    top: -1.5rem;
     border-radius: 10px;
     transition: all 250ms;
 }
