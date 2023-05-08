@@ -1,5 +1,5 @@
 /* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Zen+Old+Mincho:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@900&family=Montserrat:wght@500;600&family=Zen+Old+Mincho:wght@700&display=swap');
 /* VARIABLES */
 :root{
     --color-blanco: #FFFFFF;
@@ -70,6 +70,12 @@ nav a::before{
 }
 nav a:hover::before{
     width: 100%;
+}
+.logo{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 900;
+    font-size: 2.1rem;
+    letter-spacing: -2px;
 }
 .enlaces-usuario{
     display: flex;
