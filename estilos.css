@@ -185,9 +185,8 @@ nav a:hover::before{
 .fondo-marron{
     flex-basis: 40%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
     height: 100vh;
 }
 .fondo-marron img{
