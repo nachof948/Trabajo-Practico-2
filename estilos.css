@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 /* ESTILOS GENERALES */
+body{
+    background: linear-gradient(to right, white 60%, #d6bda6 40%);
+    height: 100vh;
+}
 header{
     position: fixed;
     top: 0;
@@ -136,7 +140,6 @@ nav a:hover::before{
 /* FIN HEADER */
 /* HERO */
 .fondo-blanco{
-    background-color: var(--color-blanco);
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
@@ -181,7 +184,6 @@ nav a:hover::before{
     color: var(--color-marron-oscuro);
 }
 .fondo-marron{
-    background-color: var(--color-marron-claro);
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
@@ -208,6 +210,8 @@ li{
     font-family: 'Montserrat', sans-serif;
     position: relative;
     cursor: pointer;
+    display: flex;
+
 }
 li::before{
     content: "";
