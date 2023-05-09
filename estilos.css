@@ -15,10 +15,10 @@
     box-sizing: border-box;
 }
 /* ESTILOS GENERALES */
-/* body{
+body{
     background: linear-gradient(to right, white 60%, #d6bda6 40%);
     height: 100vh;
-} */
+}
 header{
     position: fixed;
     top: 0;
